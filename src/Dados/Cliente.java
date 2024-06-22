@@ -19,9 +19,8 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "codigo=" + codigo +
-                ", nome='" + nome + '\'' +
-                '}';
+        return "Cliente [" +
+                " nome: " + nome+
+                ", codigo: " + codigo;
     }
 }

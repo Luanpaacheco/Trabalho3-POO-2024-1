@@ -15,9 +15,6 @@ public class Individual extends Cliente{
 
     @Override
     public String toString() {
-        return "Individual{" +
-                "cpf='" + cpf + '\'' +
-                '}';
+        return super.toString()+ ", cpf: "+cpf+" ]"+"\n";
     }
-
 }

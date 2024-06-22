@@ -12,7 +12,7 @@ public class ACMERobots {
         this.clientes = new ArrayList<>();
     }
 
-    public boolean adicionarCliente(Cliente cliente) {
+    public boolean cadastraCliente(Cliente cliente) {
         if(consultaCodigo(cliente.getCodigo())==null){
             clientes.add(cliente);
             return true;

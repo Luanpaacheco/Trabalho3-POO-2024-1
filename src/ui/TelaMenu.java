@@ -1,6 +1,8 @@
 package ui;
 
 import Dados.ACMERobots;
+import Dados.Cliente;
+import Dados.Individual;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -10,9 +12,10 @@ public class TelaMenu {
     private ACMERobots acmeRobots;
     private Aplicacao aplicacao;
     private JButton INDIVIDUAL;
-    private JButton button2;
-    private JButton button3;
+    private JButton EMPRESARIAL;
+    private JButton MOSTRAR;
     private JPanel principal;
+    private JTextArea textArea1;
 
     public TelaMenu(Aplicacao aplicacao, ACMERobots acmeRobots) {
         this.aplicacao=aplicacao;
@@ -21,12 +24,31 @@ public class TelaMenu {
         INDIVIDUAL.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                aplicacao.mudaPainel(1);
+
+                aplicacao.mudaPainel(2);
+
             }
         });
 
 
+        EMPRESARIAL.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+        MOSTRAR.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                for(Cliente c : acmeRobots.getListaCliente()){
+                    if(c instanceof Individual){
+                        Individual a =(Individual)c;
+                        textArea1.append(a.toString());
+                    }
+                }
+
+            }
+        });
     }
     public JPanel getPainel() {
         return principal;

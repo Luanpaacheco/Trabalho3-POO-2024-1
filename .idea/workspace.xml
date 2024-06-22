@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a65726a4-0e83-40a8-9e24-d082ea2e694a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ui/TelaEmpresarial.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ui/TelaEmpresarial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/Aplicacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/Aplicacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/TelaI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dados/ACMERobots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dados/ACMERobots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dados/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dados/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dados/Individual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dados/Individual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaIndividual.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaIndividual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaIndividual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/TelaMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/TelaMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "c9a0b23d",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/luanp/Documents/PUCRS/POO/Trabalho3POO/src/ui",
     "node.js.detected.package.eslint": "true",

@@ -7,7 +7,8 @@ import javax.swing.*;
 public class Aplicacao extends JFrame {
     ACMERobots clientes = new ACMERobots();
     private TelaMenu telaMenu = new TelaMenu(this,clientes);
-    private TelaI telaI = new TelaI(this,clientes);
+    private TelaIndividual telaIndividual = new TelaIndividual(this,clientes);
+    private TelaEmpresarial telaEmpresarial= new TelaEmpresarial(this, clientes);
 
 
 
@@ -22,13 +23,21 @@ public class Aplicacao extends JFrame {
     public void mudaPainel(int painel) {
         switch(painel) {
             case 1:
-                this.setContentPane(telaI.getPainel());
+                this.setContentPane(telaMenu.getPainel());
                 this.pack();
                 this.setSize(1000,800);
                 break;
             case 2:
+                this.setContentPane(telaIndividual.getPainel());
+                this.pack();
+                this.setSize(1000,800);
+                break;
 
             case 3:
+                this.setContentPane(telaEmpresarial.getPainel());
+                this.pack();
+                this.setSize(1000,800);
+                break;
 
         }
     }

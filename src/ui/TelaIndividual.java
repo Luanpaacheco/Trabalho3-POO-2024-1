@@ -26,7 +26,6 @@ public class TelaIndividual {
            @Override
            public void actionPerformed(ActionEvent e) {
                try {
-                   DecimalFormat deci=new DecimalFormat("0");
                    String nome = labelNome.getText();
                    int codigo = Integer.valueOf(labelCodigo.getText());
                    String cpf =labelCPF.getText();

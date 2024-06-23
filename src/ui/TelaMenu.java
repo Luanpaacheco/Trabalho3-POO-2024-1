@@ -2,11 +2,11 @@ package ui;
 
 import Dados.ACMERobots;
 import Dados.Cliente;
-import Dados.Individual;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Comparator;
 
 public class TelaMenu {
     private ACMERobots acmeRobots;
@@ -16,6 +16,8 @@ public class TelaMenu {
     private JButton MOSTRAR;
     private JPanel principal;
     private JTextArea textArea1;
+    private JLabel Legenda;
+    private JButton limpar;
 
     public TelaMenu(Aplicacao aplicacao, ACMERobots acmeRobots) {
         this.aplicacao=aplicacao;
@@ -34,19 +36,25 @@ public class TelaMenu {
         EMPRESARIAL.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                aplicacao.mudaPainel(3);
             }
         });
         MOSTRAR.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                for(Cliente c : acmeRobots.getListaCliente()){
-                    if(c instanceof Individual){
-                        Individual a =(Individual)c;
-                        textArea1.append(a.toString());
-                    }
+                if(acmeRobots.getListaCliente().isEmpty()){
+                    JOptionPane.showMessageDialog(aplicacao,"cadastre pelo menos um cliente!");
+                }else {
+                    textArea1.setText("");
+                    acmeRobots.getListaCliente().stream().sorted(Comparator.comparingInt(Cliente::getCodigo)).forEach(a-> textArea1.append(a.toString()+"\n"));
                 }
 
+            }
+        });
+        limpar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textArea1.setText("");
             }
         });
     }

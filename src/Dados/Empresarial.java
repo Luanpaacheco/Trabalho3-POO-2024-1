@@ -14,8 +14,8 @@ public class Empresarial extends Cliente {
 
     @Override
     public String toString() {
-        return "Empresarial{" +
-                "ano=" + ano +
-                '}';
+        return super.toString()+
+            ", ano= " + ano +
+                    " ]";
     }
 }

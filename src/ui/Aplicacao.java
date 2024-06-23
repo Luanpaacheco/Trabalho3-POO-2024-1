@@ -16,7 +16,7 @@ public class Aplicacao extends JFrame {
         super();
         JPanel painel = telaMenu.getPainel();
         add(painel);
-        setSize(1000,800);
+        setSize(850,600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setVisible(true);
     }
@@ -25,18 +25,18 @@ public class Aplicacao extends JFrame {
             case 1:
                 this.setContentPane(telaMenu.getPainel());
                 this.pack();
-                this.setSize(1000,800);
+                this.setSize(850,600);
                 break;
             case 2:
                 this.setContentPane(telaIndividual.getPainel());
                 this.pack();
-                this.setSize(1000,800);
+                this.setSize(600,400);
                 break;
 
             case 3:
                 this.setContentPane(telaEmpresarial.getPainel());
                 this.pack();
-                this.setSize(1000,800);
+                this.setSize(600,400);
                 break;
 
         }
